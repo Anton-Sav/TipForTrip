@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ProfileFragment"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+        <Button
+                android:text="Настройки"
+                android:layout_gravity="end"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/buttonSetting"
+                android:visibility="visible" android:background="@drawable/baseline_settings_black_18dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_gravity="start"
+                    android:src="@drawable/icon_user_640x640"
+                    android:layout_width="151dp"
+                    android:layout_height="122dp"
+                    android:id="@+id/imageProfile"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/textViewName"
+                        android:gravity="center"
+                        android:layout_gravity="end"
+                        android:text="Ivan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="30sp"/>
+
+                <TextView
+                        android:text="Ivanov"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="30sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewSurName"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+                android:gravity="center"
+                android:text="8 960 905 99 88"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:id="@+id/textView5"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="30sp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <TextView
+                    android:gravity="right"
+                    android:layout_gravity="center"
+                    android:text="City:"
+                    android:layout_margin="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" android:id="@+id/textView7"
+                    android:textStyle="bold" android:textColor="#000"
+                    android:textSize="30sp"/>
+            <TextView
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="Moscow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView6"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="30sp"/>
+        </LinearLayout>
+        <Button
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="My events"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content" android:id="@+id/buttonMyEvents"/>
+        <TextView
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Весной 1763 года герцог Этьен Франсуа де Шуазель, ужиная в генуэзском посольстве, допустил оплошность, расхвалив поданные блюда. Посол, желая угодить высокому гостю, предложил герцогу воспользоваться услугами своего повара, пообещав нынче же прислать того в дом вельможи.
+
+Вернувшись с ужина, де Шуазель вызвал своего повара Робера Биньона, и объявил, что с завтрашнего дня кухню возглавит другой кулинар, к которому Робер поступит в подчинение. Не осмелившись спорить, слуга удалился, что бы утром, стиснув зубы, отдать бразды правления генуэзскому коллеге.
+
+Много лет спустя, в мемуарах герцог так и не смог объяснить причину своего поступка. «Скорее всего, мои действия были обусловлены вечным желанием всё сравнивать», туманно напишет он.
+
+Тем временем, на кухне уже вовсю кипели страсти. Прибывший повар оказался на редкость спесивым типом, принявшимся наводить собственные порядки. Пренебрежительно высмеяв всё, от посуды, до устройства печей, он обвинил прислугу в безграмотности и в возможном воровстве. Опальному же Роберу отныне доверялась лишь чистка овощей, сопровождаемая насмешливыми замечаниями и оскорблениями. Тот, несмотря на придирки и унижения, терпел всё, стремясь понять, в чём мастерство нахального генуэзца превосходит его собственное. Выяснив же, через несколько дней, что ни в чём не уступает незваному гостю, Робер смекнул, что появление новичка - обычный каприз де Шуазеля. Делать было нечего и, дабы не потерять место, остается лишь ждать.
+
+К несчастью, генуэзец не удовольствовался своим воцарением на кухне, и в один прекрасный день горничная, что прежде дарила свою благосклонность Роберу, обратила взоры на нового повара. Эта капля переполнила чашу терпения несчастного! Наутро, встав чуть свет, Робер занял привычное место у плиты. Обслуга, уверенная, что всё, наконец, вернулось на круги своя, радостно захлопотала у столов. Закипела вода в котлах, застучали ножи, полетели на плиты пола куриные перья.
+
+Разъярённый генуэзец, с перекошенным от злобы лицом, ворвался на кухню в тот момент, когда Робер, насвистывая весёлую песенку, помешивал в кастрюле только что приготовленный соус.
+
+— Что происходит? – багровея, взревел новый повар.
+
+— Готовлю соус к завтраку, — делано безразлично пожал плечами Робер. – Сливочное масло, винный уксус, немного красного соуса и репчатый лук. Осталось добавить петрушки, горчицы и корнишонов.
+
+Содрогаясь от гнева, генуэзец схватил ложку и, зачерпнув из кастрюли, попробовал соус.
+
+— Merde! – торжествующе воскликнул он, сморщившись. – Обычное французское merde! Отдайте это свиньям!
+
+И плюнул в кастрюлю.
+
+— Как скажете, сеньор, — с притворной покорностью кивнул Робер."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView4"/>
+
+    </LinearLayout>
+</ScrollView>

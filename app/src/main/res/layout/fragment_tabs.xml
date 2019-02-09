@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text=" Tip for trip"
+                      android:textSize="30sp"
+                      android:textColor="#fff"
+                      android:textAllCaps="false"
+                      android:layout_centerVertical="true"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="+"
+                      android:textSize="36sp"
+                      android:layout_gravity="end"
+                      android:textColor="#fff" android:textAlignment="center"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="10dp"
+                      android:id="@+id/Plus"/>
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="#eee"
+            app:itemTextColor="#eee"
+            app:menu="@menu/menu_bottom_navigation" />
+
+</LinearLayout>
+

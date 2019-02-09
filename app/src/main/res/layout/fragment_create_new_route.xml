@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".RegFragment"
+            android:padding="10dp">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <EditText android:id="@+id/editTITLE"
+                  android:hint="Название"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"/>
+
+        <EditText android:id="@+id/editLOCATION"
+                  android:hint="Место"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"/>
+
+        <EditText android:id="@+id/editPREVIEW_TEXT"
+                  android:hint="Краткое описание"
+                  android:layout_width="match_parent"
+                  android:maxLength="150"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"/>
+
+        <EditText android:id="@+id/editFULL_TEXT"
+                  android:hint="Полное описание"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"/>
+
+        <Button
+                android:text="Добавить фото"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button2"/>
+        <Button
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="Выбрать маршрут на карте"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonForCreateMap"/>
+
+
+    </LinearLayout>
+</ScrollView>
